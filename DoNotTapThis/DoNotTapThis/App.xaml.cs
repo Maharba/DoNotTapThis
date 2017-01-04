@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 using Xamarin.Forms;
 
 namespace DoNotTapThis
@@ -14,6 +16,8 @@ namespace DoNotTapThis
             InitializeComponent();
 
             MainPage = new DoNotTapThis.MainPage();
+
+            MobileCenter.Start(typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnStart()
