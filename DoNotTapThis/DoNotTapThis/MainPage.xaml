@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:DoNotTapThis"
              x:Class="DoNotTapThis.MainPage">
 
-  <Label x:Name="lblTaps" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+  <Label x:Name="lblTaps" AutomationId="lblTaps" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
     
   </Label>
 

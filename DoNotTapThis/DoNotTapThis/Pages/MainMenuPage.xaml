@@ -4,7 +4,7 @@
              x:Class="DoNotTapThis.Pages.MainMenuPage"
                   xmlns:circle="clr-namespace:CachedImageCircle.Forms.Plugin.Abstractions;assembly=CachedImageCircle.Forms.Plugin.Abstractions"
                   xmlns:local="clr-namespace:DoNotTapThis.Pages.Items;assembly=DoNotTapThis"
-                  Title="Do Not Tap This">
+                  Title="Do Not Tap This" AutomationId="master">
   <MasterDetailPage.Master>
     <ContentPage Title="Do Not Tap This">
       <StackLayout>

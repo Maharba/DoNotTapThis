@@ -26,6 +26,12 @@ namespace DoNotTapThis.UITest
         }
 
         [Test]
+        public void RunTestConsole()
+        {
+            app.Repl();
+        }
+
+        [Test]
         public void AppLaunches()
         {
             app.Screenshot("First screen.");
@@ -38,6 +44,15 @@ namespace DoNotTapThis.UITest
             {
                 app.Tap(i == 0 ? "0" : i.ToString("##,###"));
             }
+        }
+
+        [Test]
+        public void ShowAboutPage()
+        {
+            app.Tap("OK");
+            app.Tap("About");
+            var appResult = app.Query("aboutme").First(a => a.Text == "About");
+            Assert.IsTrue(appResult != null, "The page shown is not the About Page");
         }
     }
 }
