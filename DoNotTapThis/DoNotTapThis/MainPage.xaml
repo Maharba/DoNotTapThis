@@ -4,8 +4,8 @@
              xmlns:local="clr-namespace:DoNotTapThis"
              x:Class="DoNotTapThis.MainPage">
 
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+  <Label x:Name="lblTaps" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+    
+  </Label>
 
 </ContentPage>

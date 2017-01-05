@@ -4,6 +4,7 @@
     "Microsoft.Azure.Mobile.Analytics": "0.5.0",
     "Microsoft.Azure.Mobile.Crashes": "0.5.0",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+    "Xam.Plugin.Connectivity": "2.2.12",
     "Xamarin.Forms": "2.3.3.175"
   },
   "frameworks": {
