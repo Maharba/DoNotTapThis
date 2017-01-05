@@ -5,6 +5,7 @@
     "Microsoft.Azure.Mobile.Crashes": "0.5.0",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
     "Xam.Plugin.Connectivity": "2.2.12",
+    "Xam.Plugins.Forms.CachedImageCircle": "0.0.0.1",
     "Xamarin.Forms": "2.3.3.175"
   },
   "frameworks": {

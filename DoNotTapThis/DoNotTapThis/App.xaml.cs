@@ -6,7 +6,9 @@ using Microsoft.Azure.Mobile;
 using Microsoft.Azure.Mobile.Analytics;
 using Microsoft.Azure.Mobile.Crashes;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace DoNotTapThis
 {
     public partial class App : Application
@@ -15,7 +17,7 @@ namespace DoNotTapThis
         {
             InitializeComponent();
 
-            MainPage = new DoNotTapThis.MainPage();
+            MainPage = new Pages.MainMenuPage();
 
             MobileCenter.Start(typeof(Analytics), typeof(Crashes));
         }
