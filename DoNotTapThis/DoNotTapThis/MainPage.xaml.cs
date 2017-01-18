@@ -19,7 +19,7 @@ namespace DoNotTapThis
 
             _tap = new TapGestureRecognizer();
             _userTapsManager = new UserTapsManager();
-
+            lblTaps.Text = int.MaxValue.ToString("##,###");
             _tap.Tapped += (sender, args) =>
             {
                 try

@@ -51,7 +51,7 @@ namespace DoNotTapThis.UITest
         {
             app.Tap("OK");
             app.Tap("About");
-            var appResult = app.Query("aboutme").First(a => a.Text == "About");
+            var appResult = app.Query("toolbar").First(a => a.Text == "About");
             Assert.IsTrue(appResult != null, "The page shown is not the About Page");
         }
     }

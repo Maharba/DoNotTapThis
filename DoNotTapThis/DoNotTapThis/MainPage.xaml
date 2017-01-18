@@ -4,8 +4,14 @@
              xmlns:local="clr-namespace:DoNotTapThis"
              x:Class="DoNotTapThis.MainPage">
 
-  <Label x:Name="lblTaps" AutomationId="lblTaps" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-    
+  <Label x:Name="lblTaps" AutomationId="lblTaps" Text="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="47">
+    <Label.FontFamily>
+      <OnPlatform x:TypeArguments="x:String">
+        <OnPlatform.Android>
+          <x:String>segoeuil.ttf#segoeuil</x:String>
+        </OnPlatform.Android>
+      </OnPlatform>
+    </Label.FontFamily>
   </Label>
 
 </ContentPage>

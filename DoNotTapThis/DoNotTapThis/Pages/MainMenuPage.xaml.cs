@@ -50,7 +50,8 @@ namespace DoNotTapThis.Pages
                         //TODO: Add a Settings Page
                         break;
                     case "About":
-                        //TODO: Add an About Page
+                        IsPresented = false;
+                        await Detail.Navigation.PushAsync(new AboutPage());
                         break;
                 }
             }
